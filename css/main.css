@@ -83,6 +83,14 @@
     float: right;
     margin-right: 20px;
 }
+.img-phone{
+    width: 70%;
+    padding-top:5%;
+}
+
+.img-phone .phone{
+    width: 100%;
+}
 .text3{
     color:white;
     font-family: "OpenSansLight";
@@ -234,7 +242,7 @@ h2{
     font-size: 15px;
 }
 @media only screen and (min-device-width : 320px)
-and (max-device-width : 480px) {
+and (max-device-width : 480px)  {
     .img-phone{
         display: none;  }
     .white-design-block{
@@ -258,7 +266,7 @@ and (max-device-width : 480px) {
 
     }
     .ipsum2{
-        color:#521a66;
+        color:#bb89d6;;
         text-align: center;
     }
     .text3{
@@ -267,7 +275,8 @@ and (max-device-width : 480px) {
     }
     .design{
         height: auto;
-        padding-bottom: 5%;
+        padding-bottom: 10%;
+        background: linear-gradient(to top, #815392, #521a66);
     }
     .Experience{
         height: auto;
@@ -300,6 +309,9 @@ and (max-device-width : 480px) {
         font-size: 15px;
         padding-left: 5%;
     }
+    .ipsum1{
+        color: #bb89d6;
+    }
 }
 @media only screen
 and (min-device-width : 768px)
@@ -307,11 +319,76 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 
 }
-.img-phone{
-    width: 70%;
-    padding-top:5%;
-}
 
-.img-phone .phone{
-    width: 100%;
+@media only screen and (min-device-width : 480px)
+and (max-device-width : 768px)  {
+    .img-phone{
+        display: none;  }
+    .white-design-block{
+        height: auto;
+        flex-direction: column;
+    }
+    .rigth-block , .left-block{
+        width: 85%;
+        text-align: center;
+    }
+    .left-block{
+        padding-bottom: 5%;
+    }
+    .new-venture{
+        text-align: center;
+    }
+    .Design-Worth-Using{
+        margin: 0;
+        align-items: center;
+        width: 70%;
+
+    }
+    .ipsum2{
+        color:#bb89d6;;
+        text-align: center;
+    }
+    .text3{
+        margin: 0;
+        text-align: center;
+    }
+    .design{
+        height: auto;
+        padding-bottom: 10%;
+        background: linear-gradient(to top, #815392, #521a66);
+    }
+    .Experience{
+        height: auto;
+    }
+    .rush{
+        width: 55%;
+        padding-top:5%;
+        padding-bottom: 5%  }
+    .text4{
+        text-align: center;
+    }
+    .Detailed-Stats{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+        margin: 0;
+    }
+    .Guff{
+        width: 100%;
+
+    }
+    .last-block{
+        height: auto;
+    }
+    .social{
+        height: auto;
+    }
+    .copyrigth{
+        font-size: 15px;
+        padding-left: 5%;
+    }
+    .ipsum1{
+        color: #bb89d6;
+    }
 }
