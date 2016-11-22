@@ -1,21 +1,21 @@
 .wrapper {
     height: 786px;
-    background-image: url("img/base1.png");
+    background-image: url("../img/base1.png");
 }
 .content{
-    width: 1600px;
+    width: 100%;
     height: auto;
 }
 .the-range-text{
     color:#521a66;
-    width: 45%;
-   padding-left: 30%;
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     padding-top: 8%;
+    align-items: center;
 }
 .text2{
-    margin-left: 30%;
     font-family: "OpenSansLight";
     font-size: 30px;
 }
@@ -23,10 +23,10 @@
     text-align: center;
     font-family: "ProximaNovaRegular";
     font-size: 20px;
-
+    max-width: 500px;
 }
 .wrapper2{
-    background-image: url("img/base2.png");
+    background-image: url("../img/base2.png");
     height: 789px;
 
 }
@@ -34,15 +34,15 @@
     color:white;
     font-family: "OpenSansLight";
     font-size: large;
-    padding-left: 10%;
+    padding-left: 0;
 }
 .the-venture-text{
-    margin-left: 30%;
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
     padding-top: 10%;
-    width: 45%;
-
+    width: 65%;
+    align-items: center;
 }
 .ipsum1{
     color:#815392;
@@ -55,41 +55,39 @@
     width: 220px;
     height: 60px;
     color:white;
-    background-color:#58c4c4 ;
-    margin-left: 31%;
+    background-color:#58c4c4;
     border-color: #58c4c4;
     margin-top: 5%;
     border-width: 0;
     font-weight: bolder;
     font-size: large;
 }
-.img{
-    margin-left: 45%;
-}
-.disign{
-    background-image: url("img/disign.png");
+.design{
+    background-image: url("../img/disign.png");
     height: 960px;
     display: flex;
     justify-content: space-around;
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: 100%;
     padding-top: 5%;
 
 }
-.phone{
-    margin-left: 20%;
-    margin-top: 10%;
-}
 .Design-Worth-Using{
     display: flex;
     flex-direction: column;
-    margin-left: 14%;
+    width: 50%;
+    align-items: flex-end;
+    margin-right: 5%;
+}
+.Design-Worth-Using * {
+    float: right;
+    margin-right: 20px;
 }
 .text3{
     color:white;
     font-family: "OpenSansLight";
     font-size: larger;
-    padding-left: 18%;
+    padding-left:0;
 }
 .ipsum2{
     color:#815392;
@@ -102,8 +100,7 @@
     width: 220px;
     height: 60px;
     color:white;
-    background-color:#58c4c4 ;
-    margin-left: 41%;
+    background-color:#58c4c4;
     border-color: #58c4c4;
     margin-top: 5%;
     border-width: 0;
@@ -158,22 +155,21 @@ h2{
     font-size: 20px;
 }
 .Experience{
-    background-image: url("img/rush.png");
+    background-image: url("../img/rush.png");
     height: 450px;
 }
 .text4{
     color:white;
-    padding-left: 20%;
     font-family: "OpenSansLight";
     font-size: larger;
 }
 .rush{
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 5%;
-    width: 60%;
-    margin-left: 25%;
+    padding-top: 10%;
+    width: 65%;
+    align-items: center;
 }
 .last-block{
     height: 480px;
@@ -239,14 +235,70 @@ h2{
 }
 @media only screen and (min-device-width : 320px)
 and (max-device-width : 480px) {
-    .the-range-text{
+    .img-phone{
+        display: none;  }
+    .white-design-block{
+        height: auto;
+        flex-direction: column;
+    }
+    .rigth-block , .left-block{
+        width: 85%;
+        text-align: center;
+    }
+    .left-block{
+        padding-bottom: 5%;
+    }
+    .new-venture{
+        text-align: center;
+    }
+    .Design-Worth-Using{
+        margin: 0;
+        align-items: center;
+        width: 70%;
 
     }
-    .text2{
+    .ipsum2{
+        color:#521a66;
+        text-align: center;
+    }
+    .text3{
+        margin: 0;
+        text-align: center;
+    }
+    .design{
+        height: auto;
+        padding-bottom: 5%;
+    }
+    .Experience{
+        height: auto;
+    }
+    .rush{
+        width: 55%;
+        padding-top:5%;
+        padding-bottom: 5%  }
+    .text4{
+        text-align: center;
+    }
+    .Detailed-Stats{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+        margin: 0;
+    }
+    .Guff{
+        width: 100%;
 
     }
-    .text1{
-
+    .last-block{
+        height: auto;
+    }
+    .social{
+        height: auto;
+    }
+    .copyrigth{
+        font-size: 15px;
+        padding-left: 5%;
     }
 }
 @media only screen
@@ -254,4 +306,12 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
 
+}
+.img-phone{
+    width: 70%;
+    padding-top:5%;
+}
+
+.img-phone .phone{
+    width: 100%;
 }
